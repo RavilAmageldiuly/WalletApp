@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/bank_accounts"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingStart="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/bank_account_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@color/teal_700"
+            android:minWidth="50dp"
+            android:minHeight="45dp"
+            android:padding="5dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_baseline_account_balance_wallet_24"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/bank_account_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/bank_account_icon"
+            android:text="@string/name_of_bank_account"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/money_color"
+            android:textSize="22sp"
+            android:layout_below="@id/bank_account_name"
+            android:layout_toEndOf="@id/bank_account_icon" />
+
+    </RelativeLayout>
+
+</LinearLayout>

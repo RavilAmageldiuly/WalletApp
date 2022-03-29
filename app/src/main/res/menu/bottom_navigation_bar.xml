@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bank_accounts_nav_i"
+        android:icon="@drawable/ic_baseline_account_balance_24"
+        android:title="@string/bank_account_fragment" />
+    <item
+        android:id="@+id/spends_nav_i"
+        android:icon="@drawable/ic_baseline_attach_money_24"
+        android:title="@string/spends_fragment" />
+    <item
+        android:id="@+id/bill_nav_i"
+        android:icon="@drawable/ic_baseline_wysiwyg_24"
+        android:title="@string/bill_fragment" />
+
+</menu>

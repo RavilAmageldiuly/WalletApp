@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Wallet</string>
+    <string name="bank_account_fragment">Счета</string>
+    <string name="spends_fragment">Доходы/Расходы</string>
+    <string name="bill_fragment">Чек</string>
+    <string name="sum_of_all_money">Сумма</string>
+    <string name="currency_converter_label">Курс валют на сегодня</string>
+    <string name="hello_blank_fragment">Hello</string>
+    <string name="name_of_bank_account">Карта</string>
+    <string name="hint_name">Имя счёта</string>
+    <string name="hint_balance">Баланс</string>
+    <string-array name="currency_types">
+        <item>KZT</item>
+        <item>USD</item>
+        <item>EUR</item>
+    </string-array>
+    <string name="add_button">Добавить</string>
+    <string name="add_new_bank_account_label">Добавить новый счет</string>
+    <string-array name="type_of_account">
+        <item>Наличные</item>
+        <item>Карта</item>
+        <item>Депозит</item>
+    </string-array>
+    <string name="charge_hint">Комиссия</string>
+    <string name="spends">Расходы</string>
+    <string name="percent_hint">Процент</string>
+</resources>

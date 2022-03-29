@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankAccountsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bank_account_fragment_header"
+        android:background="@color/light_grey"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bank_account_fragment"
+            android:padding="3dp"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sum_and_add_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bank_account_fragment_header"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp">
+
+        <TextView
+            android:id="@+id/accounts_f_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="@string/sum_of_all_money"
+            android:textColor="@color/money_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/add_card_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:src="@drawable/ic_baseline_add_card_24" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bank_account_div_1"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@color/light_grey"
+        android:layout_below="@id/sum_and_add_card_layout" />
+
+    <LinearLayout
+        android:id="@+id/bank_accounts_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/bank_account_div_1"
+        android:layout_above="@id/bank_account_div_2" />
+
+
+    <View
+        android:id="@+id/bank_account_div_2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/light_grey"
+        android:layout_above="@id/current_currency_label" />
+
+    <TextView
+        android:id="@+id/current_currency_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_above="@+id/current_currency_layout"
+        android:layout_centerHorizontal="true"
+        android:text="@string/currency_converter_label"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/current_currency_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="3dp"
+        android:layout_marginBottom="10dp">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 0"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp"
+            app:drawableLeftCompat="@drawable/ic_baseline_euro_symbol_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 0"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp"
+            app:drawableLeftCompat="@drawable/ic_baseline_attach_money_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=": 0"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp"
+            app:drawableStartCompat="@drawable/ic_baseline_currency_yen_24" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
